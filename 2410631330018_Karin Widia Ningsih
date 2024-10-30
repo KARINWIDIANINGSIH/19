@@ -1,0 +1,54 @@
+def hitung_luas(panjang, lebar):
+    """Menghitung luas (m²)"""
+    return panjang * lebar
+
+def hitung_volume(panjang, lebar, tinggi):
+    """Menghitung volume (m³)"""
+    return panjang * lebar * tinggi
+
+def hitung_kecepatan(jarak, waktu):
+    """Menghitung kecepatan (m/s)"""
+    return jarak / waktu
+
+def hitung_percepatan(kecepatan_akhir, kecepatan_awal, waktu):
+    """Menghitung percepatan (m/s²)"""
+    return (kecepatan_akhir - kecepatan_awal) / waktu
+
+def main():
+    print("Program Menghitung Besaran Turunan Fisika")
+    print("=========================================")
+    print("Pilih perhitungan yang diinginkan:")
+    print("1. Luas")
+    print("2. Volume")
+    print("3. Kecepatan")
+    print("4. Percepatan")
+    
+    pilihan = int(input("\nMasukkan pilihan (1-4): "))
+    
+    if pilihan == 1:
+[28/10 11.12] Karinwdia: p = float(input("Masukkan panjang (m): "))
+        l = float(input("Masukkan lebar (m): "))
+        print(f"Luas = {hitung_luas(p, l)} m²")
+        
+    elif pilihan == 2:
+        p = float(input("Masukkan panjang (m): "))
+        l = float(input("Masukkan lebar (m): "))
+        t = float(input("Masukkan tinggi (m): "))
+        print(f"Volume = {hitung_volume(p, l, t)} m³")
+        
+    elif pilihan == 3:
+        s = float(input("Masukkan jarak (m): "))
+        t = float(input("Masukkan waktu (s): "))
+        print(f"Kecepatan = {hitung_kecepatan(s, t)} m/s")
+        
+    elif pilihan == 4:
+        v2 = float(input("Masukkan kecepatan akhir (m/s): "))
+        v1 = float(input("Masukkan kecepatan awal (m/s): "))
+        t = float(input("Masukkan waktu (s): "))
+        print(f"Percepatan = {hitung_percepatan(v2, v1, t)} m/s²")
+        
+    else:
+        print("Pilihan tidak valid!")
+
+if _name_ == "_main_":
+    main()
